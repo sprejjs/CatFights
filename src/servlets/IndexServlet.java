@@ -10,12 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * Created by vspreys on 24/04/16.
  */
-@WebServlet(name = "IndexServlet", urlPatterns = {"/"})
+@WebServlet(name = "IndexServlet")
 public class IndexServlet extends HttpServlet {
     private static final String ATTRIBUTE_PLAYER = "player";
 
