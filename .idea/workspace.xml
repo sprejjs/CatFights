@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3f2033-b47f-4f86-a73f-a81df8a2af5c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/project-template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CatFights.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/spreys/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/spreys/model/Cat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/spreys/model/GameResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/spreys/model/Player.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/CatFights2_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CatFights2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Cat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/GameResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Player.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlets/HelloServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CatFights2.iws" />
@@ -344,12 +340,20 @@
       <updated>1461464626538</updated>
       <workItem from="1461464630921" duration="405000" />
       <workItem from="1461466278238" duration="66000" />
-      <workItem from="1461466424910" duration="39000" />
+      <workItem from="1461466424910" duration="92000" />
     </task>
+    <task id="LOCAL-00001" summary="Adds servlet">
+      <created>1461466483031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1461466483031</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="510000" />
+    <option name="totallyTimeSpent" value="563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="987" extended-state="6" />
@@ -387,6 +391,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adds servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
