@@ -16,7 +16,7 @@ import java.io.IOException;
  */
 @WebServlet(name = "IndexServlet")
 public class IndexServlet extends HttpServlet {
-    private static final String ATTRIBUTE_PLAYER = "player";
+    public static final String ATTRIBUTE_PLAYER = "player";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");

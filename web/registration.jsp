@@ -29,13 +29,13 @@
             }
         %>
 
-        <form action="http://localhost:8080/servlets/login" id="login_form">
+        <form action="${pageContext.request.contextPath}/servlets/login" id="login_form">
             <h3>Sign in</h3>
             <label for="inp_sign_in_username">Username: </label> <input id="inp_sign_in_username" type="text" name="username" value="<%= username %>"> <br/>
             <label for="inp_sign_in_password">Password: </label> <input id="inp_sign_in_password" type="password" name="password" value="<%= password %>">
             <input type="submit" value="Sign in">
         </form>
-        <form action="http://localhost:8080/servlets/signup" id="signup_form">
+        <form action="${pageContext.request.contextPath}/servlets/signup" id="signup_form">
             <h3>Sign up</h3>
             <label for="inp_sign_up_username">Username: </label> <input id="inp_sign_up_username" type="text" name="username" value="<%= username %>"> <br/>
             <label for="inp_sign_up_password">Password: </label> <input id="inp_sign_up_password" type="password" name="password" value="<%= password %>">

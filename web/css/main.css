@@ -27,3 +27,17 @@ body {
     padding: 20px;
     display: inline-block;
 }
+
+.btn-select-action {
+    margin: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    background:  lightblue;
+    border: 1px;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 package servlets;
 
 import model.DBHelper;
+import model.Player;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,8 +32,10 @@ public class LoginServlet extends HttpServlet {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/registration.jsp");
             dispatcher.forward(req, resp);
         } else {
-            PrintWriter printWriter = resp.getWriter();
-            printWriter.print("<h1>Login success!</h1>");
+            Player player = new Player(username, password);
+            req.setAttribute(IndexServlet.ATTRIBUTE_PLAYER, player);
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/main_menu.jsp");
+            dispatcher.forward(req, resp);
         }
     }
 }
