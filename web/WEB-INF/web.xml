@@ -25,6 +25,11 @@
         <servlet-class>servlets.GameServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>HistoryServlet</servlet-name>
+        <servlet-class>servlets.HistoryServlet</servlet-class>
+    </servlet>
+
     <!-- Servlets mapping starts -->
 
     <servlet-mapping>
@@ -45,6 +50,11 @@
     <servlet-mapping>
         <servlet-name>GameServlet</servlet-name>
         <url-pattern>/servlets/game</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HistoryServlet</servlet-name>
+        <url-pattern>/servlets/history</url-pattern>
     </servlet-mapping>
 
     <!-- Welcome file list starts -->

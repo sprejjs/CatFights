@@ -2,6 +2,17 @@ body {
     text-align: center;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .error_message {
     color: red;
     border-radius: 6px;
@@ -53,16 +64,25 @@ body {
     cursor: pointer;
 }
 
-.competitor img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover
+.small {
+    margin: 10px;
+    background: #FF9800;
+    width: 100px;
+    height: 150px;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .winner {
     background: #FF9800;
     width: 500px;
     height: 550px;
+}
+
+.competitor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
 }
 
 .small_button {

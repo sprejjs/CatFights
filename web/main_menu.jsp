@@ -30,7 +30,7 @@
             Start a new game
         </div>
 
-        <div id="btn_closed_room" class="btn-select-action">
+        <div id="btn_closed_room" class="btn-select-action" onclick="window.location.href = '/servlets/history'">
             View previous games
         </div>
     </div>

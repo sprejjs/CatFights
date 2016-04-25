@@ -10,26 +10,40 @@ import java.util.Date;
 public class GameResult implements Serializable {
 
     private int id;
-    private int winnerId;
-    private int playerId;
+    private Player player;
+    private Cat winner;
     private Date date;
 
     public GameResult(Player player, Cat winner) {
-        this.playerId = player.getId();
-        this.winnerId = winner.getId();
+        this.player = player;
+        this.winner = winner;
         this.date = new Date(); //Current date and time;
+    }
+
+    public GameResult(Player player, Cat winner, Date date) {
+        this.player = player;
+        this.winner = winner;
+        this.date = date;
     }
 
     public int getId() {
         return this.id;
     }
 
+    public Player getPlayer() {
+        return this.player;
+    }
+
+    public Cat getWinner() {
+        return this.winner;
+    }
+
     public int getWinnerId() {
-        return this.winnerId;
+        return this.winner.getId();
     }
 
     public int getPlayerId() {
-        return this.playerId;
+        return this.player.getId();
     }
 
     public Date getDate() {

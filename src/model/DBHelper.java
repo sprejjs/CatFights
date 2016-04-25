@@ -4,7 +4,10 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -77,6 +80,50 @@ public class DBHelper {
         }
 
         return cats;
+    }
+
+    public List<GameResult> getGameResults() {
+        List<GameResult> gameResults = new ArrayList<>();
+        try {
+            final Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            String command = "SELECT Cat.id AS 'CatId', Cat.name AS 'CatName', Cat.photoPath,  " +
+                    "Player.id AS 'PlayerId', Player.Name AS 'PlayerName', " +
+                    "GameResult.date " +
+                    "FROM GameResult " +
+                    "JOIN(Cat, Player) " +
+                    "ON (GameResult.winnerId = Cat.id AND GameResult.playerId = Player.id) " +
+                    "ORDER BY date DESC";
+
+            ResultSet rs = stmt.executeQuery(command);
+            rs.first();
+
+            do {
+                //Retrieve the cat details
+                int catId = rs.getInt("CatId");
+                String catName = rs.getString("CatName");
+                String photoPath = rs.getString("photoPath");
+                Cat winningCat = new Cat(catId, catName, photoPath);
+
+                //Retrieve player details
+                int playerId = rs.getInt("PlayerId");
+                String playerName = rs.getString("PlayerName");
+                Player player = new Player(playerId, playerName);
+
+                //Retrieve the date
+                String dateAsString = rs.getString("date");
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                Date date = sdf.parse(dateAsString);
+
+                //Retrieve the player details
+                gameResults.add(new GameResult(player, winningCat, date));
+            }
+            while (rs.next());
+
+        } catch (SQLException | ParseException e) {
+            e.printStackTrace();
+        }
+
+        return gameResults;
     }
 
     public void saveGameResults(GameResult result) {
