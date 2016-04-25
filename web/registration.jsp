@@ -1,4 +1,4 @@
-<%--
+<%@ page import="servlets.LoginServlet" %><%--
   Created by IntelliJ IDEA.
   User: vspreys
   Date: 24/04/16
@@ -15,10 +15,20 @@
         <%
             String username = "";
             String password = "";
+            String errorMessage = (String) request.getAttribute(LoginServlet.ATTRIBUTE_ERROR_MESSAGE);
         %>
 
         <h1> Welcome to cat fights!</h1>
         <img src="http://thecatapi.com/api/images/get?format=src&type=gif"> <br/>
+
+        <%
+            if (errorMessage != null) {
+                out.print("<div class=\"error_message\">");
+                out.print(errorMessage);
+                out.print("</div><br />");
+            }
+        %>
+
         <form action="http://localhost:8080/servlets/login" id="login_form">
             <h3>Sign in</h3>
             <label for="inp_sign_in_username">Username: </label> <input id="inp_sign_in_username" type="text" name="username" value="<%= username %>"> <br/>

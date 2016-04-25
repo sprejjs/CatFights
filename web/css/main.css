@@ -1,6 +1,17 @@
 body {
     text-align: center;
 }
+
+.error_message {
+    color: red;
+    border-radius: 6px;
+    border: 2px solid red;
+    padding: 20px;
+    width: 400px;
+    margin: 10px;
+    display: inline-block;
+}
+
 #login_form {
     border-radius: 25px 0 0 25px;
     background: #73AD21;
