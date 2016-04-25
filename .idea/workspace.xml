@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d3f2033-b47f-4f86-a73f-a81df8a2af5c" name="Default" comment="Finishes the gameplay.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/winner.jsp" />
+    <list default="true" id="6d3f2033-b47f-4f86-a73f-a81df8a2af5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Game.java" afterPath="$PROJECT_DIR$/src/model/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cat.java" afterPath="$PROJECT_DIR$/src/model/Cat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/DBHelper.java" afterPath="$PROJECT_DIR$/src/model/DBHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/GameResult.java" afterPath="$PROJECT_DIR$/src/model/GameResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Player.java" afterPath="$PROJECT_DIR$/src/model/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/GameServlet.java" afterPath="$PROJECT_DIR$/src/servlets/GameServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/round.jsp" afterPath="$PROJECT_DIR$/web/round.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/LoginServlet.java" afterPath="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
     </list>
     <ignored path="CatFights2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,6 +43,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/model/Game.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -66,7 +77,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="winner.jsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="winner.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/winner.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="525">
@@ -79,12 +90,36 @@
           <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/model/DBHelper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="388">
-                  <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+                <state relative-caret-position="532">
+                  <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <marker date="1461559403000" expanded="true" signature="1446:1534" placeholder="SELECT * FRO... Player" />
-                    <marker date="1461559403000" expanded="true" signature="1977:1994" placeholder="SELECT * FRO... Player" />
+                    <marker date="1461567799000" expanded="true" signature="1445:1533" placeholder="SELECT * FRO... Player" />
+                    <marker date="1461567799000" expanded="true" signature="2054:2071" placeholder="SELECT * FRO... Player" />
+                    <marker date="1461567799000" expanded="true" signature="2757:2972" placeholder="INSERT INTO `cat_fights`.`GameResult`... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Cat.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/model/Cat.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/model/Player.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#388#389#0" expanded="true" />
+                    <element signature="e#418#419#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -97,8 +132,8 @@
           <file leaf-file-name="GameServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/servlets/GameServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="358">
-                  <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+                <state relative-caret-position="778">
+                  <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -109,8 +144,8 @@
           <file leaf-file-name="GameResult.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/model/GameResult.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-30">
-                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                <state relative-caret-position="465">
+                  <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -126,7 +161,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IndexServlet.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="IndexServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/servlets/IndexServlet.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="465">
@@ -138,11 +173,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="round.jsp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="round.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/round.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                <state relative-caret-position="135">
+                  <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -238,23 +273,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/Cat.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/servlets/HelloServlet.java" />
         <option value="$PROJECT_DIR$/web/main.css" />
         <option value="$PROJECT_DIR$/src/servlets/SignupServlet.java" />
         <option value="$PROJECT_DIR$/web/registration.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/IndexServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/model/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/model/Round.java" />
         <option value="$PROJECT_DIR$/web/main_menu.jsp" />
         <option value="$PROJECT_DIR$/src/model/Game.java" />
         <option value="$PROJECT_DIR$/web/round.jsp" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/src/servlets/GameServlet.java" />
         <option value="$PROJECT_DIR$/web/winner.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/GameServlet.java" />
+        <option value="$PROJECT_DIR$/src/model/GameResult.java" />
+        <option value="$PROJECT_DIR$/src/model/Player.java" />
+        <option value="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/model/DBHelper.java" />
+        <option value="$PROJECT_DIR$/src/model/Cat.java" />
       </list>
     </option>
   </component>
@@ -978,7 +1015,7 @@
       <workItem from="1461466278238" duration="66000" />
       <workItem from="1461466424910" duration="158000" />
       <workItem from="1461466596988" duration="1586000" />
-      <workItem from="1461530348304" duration="23626000" />
+      <workItem from="1461530348304" duration="24970000" />
     </task>
     <task id="LOCAL-00001" summary="Adds servlet">
       <created>1461466483031</created>
@@ -1071,11 +1108,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461564616308</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Displays the game over page.">
+      <created>1461566589316</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1461566589316</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25841000" />
+    <option name="totallyTimeSpent" value="27185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="973" extended-state="6" />
@@ -1083,7 +1127,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1135,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5425653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5425653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1135,7 +1179,8 @@
     <MESSAGE value="Place Player into session instead of request." />
     <MESSAGE value="Displays a game round" />
     <MESSAGE value="Completes the 8th finals." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completes the 8th finals." />
+    <MESSAGE value="Displays the game over page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Displays the game over page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1300,14 +1345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Cat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/SignupServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1347,28 +1384,6 @@
         <state relative-caret-position="407">
           <caret line="147" column="26" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1461559403000" expanded="true" signature="1446:1534" placeholder="SELECT * FRO... Player" />
-            <marker date="1461559403000" expanded="true" signature="1977:1994" placeholder="SELECT * FRO... Player" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="41" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1423,14 +1438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/GameResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1443,14 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="90" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/round.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1475,16 +1474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/GameServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/IndexServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1499,6 +1488,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/GameResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/GameServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1461567799000" expanded="true" signature="1445:1533" placeholder="SELECT * FRO... Player" />
+            <marker date="1461567799000" expanded="true" signature="2054:2071" placeholder="SELECT * FRO... Player" />
+            <marker date="1461567799000" expanded="true" signature="2757:2972" placeholder="INSERT INTO `cat_fights`.`GameResult`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Cat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/round.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -7,13 +7,12 @@ import java.io.Serializable;
  */
 public class Player implements Serializable {
 
-    private String username;
-    private String password;
     private int id;
+    private String username;
 
-    public Player(String username, String password) {
+    public Player(int id, String username) {
         this.username = username;
-        this.password = password;
+        this.id = id;
     }
 
     public String getUsername() {

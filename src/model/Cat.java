@@ -11,7 +11,8 @@ public class Cat implements Serializable {
     private String name;
     private String photoPath;
 
-    public Cat(String name, String photoPath) {
+    public Cat(int id, String name, String photoPath) {
+        this.id = id;
         this.name = name;
         this.photoPath = photoPath;
     }

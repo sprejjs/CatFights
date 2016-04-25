@@ -1,6 +1,7 @@
 package model;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -33,5 +34,11 @@ public class GameResult implements Serializable {
 
     public Date getDate() {
         return this.date;
+    }
+
+    public String getDateAsString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        return sdf.format(this.date);
     }
 }

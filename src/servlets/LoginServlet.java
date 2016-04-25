@@ -27,15 +27,13 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
 
         DBHelper dbHelper = DBHelper.getInstance();
-        boolean loginSuccess = dbHelper.login(username, password);
+        Player player = dbHelper.login(username, password);
 
-        if (!loginSuccess) {
+        if (player == null) {
             req.setAttribute(ATTRIBUTE_ERROR_MESSAGE, "Invalid username or password");
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/registration.jsp");
             dispatcher.forward(req, resp);
         } else {
-            Player player = new Player(username, password);
-
             HttpSession session = req.getSession(true); //Create session if doesn't exist\
             session.setAttribute(ATTRIBUTE_PLAYER, player);
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/main_menu.jsp");

@@ -36,20 +36,24 @@ public class DBHelper {
         }
     }
 
-    public boolean login(String username, String password) {
+    public Player login(String username, String password) {
         try {
             String hashedPass = getMd5Hash(password);
             final Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
             String command = "SELECT * FROM Player WHERE Name = '" + username + "' AND Password = '" + hashedPass + "'";
             ResultSet rs = stmt.executeQuery(command);
 
-            return rs.next();
+            rs.first();
+
+            int id = rs.getInt("id");
+
+            return new Player(id, username);
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        return false;
+        return null;
     }
 
     public List<Cat> getCats() {
@@ -61,9 +65,10 @@ public class DBHelper {
             rs.first();
 
             do {
+                int id = rs.getInt("id");
                 String name = rs.getString("name");
                 String photoPath = rs.getString("photoPath");
-                cats.add(new Cat(name, photoPath));
+                cats.add(new Cat(id, name, photoPath));
             }
             while (rs.next());
 
@@ -72,6 +77,18 @@ public class DBHelper {
         }
 
         return cats;
+    }
+
+    public void saveGameResults(GameResult result) {
+        try {
+            final Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            String command = "INSERT INTO `cat_fights`.`GameResult` (`id`, `winnerId`, `playerId`, `date`) " +
+                    "VALUES (NULL, '" + result.getWinnerId() + "', '" + result.getPlayerId() + "', '" + result.getDateAsString() + "');";
+
+            stmt.execute(command);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     private String getMd5Hash(String originalString) {

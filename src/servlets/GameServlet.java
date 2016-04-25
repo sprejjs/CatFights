@@ -1,9 +1,6 @@
 package servlets;
 
-import model.Cat;
-import model.DBHelper;
-import model.Game;
-import model.Round;
+import model.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+
+import static servlets.IndexServlet.ATTRIBUTE_PLAYER;
 
 /**
  * Created by vspreys on 25/04/16.
@@ -57,12 +56,19 @@ public class GameServlet extends HttpServlet {
         } else {
             //The game is over
             Cat winner = game.getWinner();
-            req.setAttribute(ATTRIBUTE_GAME_WINNER, winner);
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
-            dispatcher.forward(req, resp);
+            Player player = (Player)req.getSession().getAttribute(ATTRIBUTE_PLAYER);
 
             //Reset the game
             session.setAttribute(ATTRIBUTE_GAME, null);
+
+            //Save the game results
+            GameResult result = new GameResult(player, winner);
+            DBHelper.getInstance().saveGameResults(result);
+
+            //Display the winner page
+            req.setAttribute(ATTRIBUTE_GAME_WINNER, winner);
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
+            dispatcher.forward(req, resp);
         }
     }
 }
