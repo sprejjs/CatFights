@@ -17,9 +17,17 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
 
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+
         DBHelper dbHelper = DBHelper.getInstance();
+        boolean loginSuccess = dbHelper.login(username, password);
 
         PrintWriter printWriter = resp.getWriter();
-        printWriter.print("<h1>Login servlet called with username " + req.getParameter("username") + "</h1>");
+        if(loginSuccess) {
+            printWriter.print("<h1>Login success!</h1>");
+        } else {
+            printWriter.print("<h1>Login fail!</h1>");
+        }
     }
 }

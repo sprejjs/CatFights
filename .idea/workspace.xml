@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d3f2033-b47f-4f86-a73f-a81df8a2af5c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/mysql-connector-java-5.1.38-bin.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_38_bin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/DBHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/CatFights2_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/CatFights2_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CatFights2.iml" afterPath="$PROJECT_DIR$/CatFights2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/DBHelper.java" afterPath="$PROJECT_DIR$/src/model/DBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/LoginServlet.java" afterPath="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
     </list>
     <ignored path="CatFights2.iws" />
@@ -80,11 +76,22 @@
           <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/model/DBHelper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="116">
-                  <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+                <state relative-caret-position="223">
+                  <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <marker date="1461552997000" expanded="true" signature="1395:1483" placeholder="SELECT * FRO... Player" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ResultSet.java" pinned="false" current-in-tab="false">
+            <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="407">
+                  <caret line="147" column="26" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="26" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -106,8 +113,8 @@
           <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -889,7 +896,7 @@
       <workItem from="1461466278238" duration="66000" />
       <workItem from="1461466424910" duration="158000" />
       <workItem from="1461466596988" duration="1586000" />
-      <workItem from="1461530348304" duration="8290000" />
+      <workItem from="1461530348304" duration="11220000" />
     </task>
     <task id="LOCAL-00001" summary="Adds servlet">
       <created>1461466483031</created>
@@ -933,11 +940,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461539425124</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adds connection to the DB.">
+      <created>1461541016565</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1461541016565</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10505000" />
+    <option name="totallyTimeSpent" value="13435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="973" extended-state="6" />
@@ -953,7 +967,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29171395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5425653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -964,7 +978,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39954597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39954597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -990,17 +1004,21 @@
     <MESSAGE value="Adds the registration page" />
     <MESSAGE value="Adds Login and Signup servlets" />
     <MESSAGE value="Removes unused `index25.jsp` file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removes unused `index25.jsp` file" />
+    <MESSAGE value="Adds connection to the DB." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds connection to the DB." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="req.getParameter(&quot;username&quot;)" language="JAVA" custom="" />
         <watch expression="req.getParameter(&quot;password&quot;)" language="JAVA" custom="" />
         <watch expression="req.getParameterNames()" language="JAVA" custom="" />
+        <watch expression="((byte[]) hash).toString()" language="JAVA" custom="" />
+        <watch expression="((byte[]) hash).toString()" language="JAVA" custom="" />
+        <watch expression="stmt.execute(command)" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -1225,20 +1243,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="147" column="26" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        <state relative-caret-position="223">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1461552997000" expanded="true" signature="1395:1483" placeholder="SELECT * FRO... Player" />
           </folding>
         </state>
       </provider>

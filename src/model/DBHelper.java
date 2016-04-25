@@ -1,8 +1,9 @@
 package model;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.sql.*;
 
 /**
  * Created by vspreys on 25/04/16.
@@ -20,7 +21,7 @@ public class DBHelper {
         System.out.println("Trying to access mysql db");
 
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName(DRIVER);
             System.out.println("Driver loaded!");
         } catch (ClassNotFoundException e) {
             throw new IllegalStateException("Cannot find the driver in the classpath!", e);
@@ -31,6 +32,41 @@ public class DBHelper {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public boolean login(String username, String password) {
+        try {
+            String hashedPass = getMd5Hash(password);
+            final Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            String command = "SELECT * FROM Player WHERE Name = '" + username + "' AND Password = '" + hashedPass + "'";
+            ResultSet rs = stmt.executeQuery(command);
+
+            return rs.next();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    private String getMd5Hash(String originalString) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            md.update(originalString.getBytes("UTF-8"));
+            byte[] digest = md.digest();
+            StringBuilder sb = new StringBuilder();
+
+            for (byte b : digest) {
+                sb.append(String.format("%02x", b & 0xff));
+            }
+
+            return sb.toString();
+        } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     /**
