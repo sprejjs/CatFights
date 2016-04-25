@@ -8,8 +8,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.PrintWriter;
+
+import static servlets.IndexServlet.ATTRIBUTE_PLAYER;
 
 /**
  * Created by vspreys on 25/04/16.
@@ -33,7 +35,9 @@ public class LoginServlet extends HttpServlet {
             dispatcher.forward(req, resp);
         } else {
             Player player = new Player(username, password);
-            req.setAttribute(IndexServlet.ATTRIBUTE_PLAYER, player);
+
+            HttpSession session = req.getSession(true); //Create session if doesn't exist\
+            session.setAttribute(ATTRIBUTE_PLAYER, player);
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/main_menu.jsp");
             dispatcher.forward(req, resp);
         }

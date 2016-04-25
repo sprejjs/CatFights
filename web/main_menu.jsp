@@ -14,7 +14,7 @@
 </head>
 <body>
     <%
-        Player currentPlayer = (Player) request.getAttribute(IndexServlet.ATTRIBUTE_PLAYER);
+        Player currentPlayer = (Player) session.getAttribute(IndexServlet.ATTRIBUTE_PLAYER);
 
         if (currentPlayer == null) {
             RequestDispatcher dispatcher = getServletConfig().getServletContext().getRequestDispatcher("/");

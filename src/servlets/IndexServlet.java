@@ -28,6 +28,9 @@ public class IndexServlet extends HttpServlet {
         if(player == null) {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/registration.jsp");
             dispatcher.forward(request, response);
+        } else {
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/main_menu.jsp");
+            dispatcher.forward(request, response);
         }
     }
 }
