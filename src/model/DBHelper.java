@@ -4,6 +4,8 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by vspreys on 25/04/16.
@@ -50,6 +52,28 @@ public class DBHelper {
         return false;
     }
 
+    public List<Cat> getCats() {
+        List<Cat> cats = new ArrayList<>();
+        try {
+            final Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            String command = "SELECT * from Cat";
+            ResultSet rs = stmt.executeQuery(command);
+            rs.first();
+
+            do {
+                String name = rs.getString("name");
+                String photoPath = rs.getString("photoPath");
+                cats.add(new Cat(name, photoPath));
+            }
+            while (rs.next());
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return cats;
+    }
+
     private String getMd5Hash(String originalString) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
@@ -71,6 +95,7 @@ public class DBHelper {
 
     /**
      * Signleton design pattern.
+     *
      * @return creates a new instance of DBHelper if that doesn't exist yet and then returns the instance
      */
     public static DBHelper getInstance() {
