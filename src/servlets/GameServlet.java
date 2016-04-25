@@ -35,7 +35,12 @@ public class GameServlet extends HttpServlet {
         //Save the results of the previous round (if any)
         String winningCat = req.getParameter(ATTRIBUTE_WINNING_CAT);
         if (winningCat != null) {
-            System.out.println("Winning cat supplied. It is - " + winningCat);
+            Round round = game.getNextRound();
+            if(winningCat.equals("a")) {
+                round.catAWon();
+            } else {
+                round.catBWon();
+            }
         }
 
         session.setAttribute(ATTRIBUTE_GAME, game);

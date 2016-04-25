@@ -19,7 +19,7 @@ public class Game {
         quarterRounds = new ArrayList<>();
         semifinals = new ArrayList<>();
 
-        for(int i = 0; i < 8; i += 2) {
+        for(int i = 0; i < 16; i += 2) {
             Cat catA = allCats.get(i);
             Cat catB = allCats.get(i + 1);
             eightFinals.add(new Round(catA, catB));
