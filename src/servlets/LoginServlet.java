@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/registration.jsp");
             dispatcher.forward(req, resp);
         } else {
-            HttpSession session = req.getSession(true); //Create session if doesn't exist\
+            HttpSession session = req.getSession(true); //Create session if doesn't exist
             session.setAttribute(ATTRIBUTE_PLAYER, player);
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/main_menu.jsp");
             dispatcher.forward(req, resp);

@@ -59,6 +59,23 @@ public class DBHelper {
         return null;
     }
 
+    public Player register(String username, String password) {
+        try {
+            String command = "INSERT INTO Player (`id`, `Name`, `Password`) VALUES (NULL, ?, ?)";
+            PreparedStatement stmt = connection.prepareStatement(command, Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, username);
+            stmt.setString(2, getMd5Hash(password));
+            stmt.executeUpdate();
+
+            return login(username, password);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
     public List<Cat> getCats() {
         List<Cat> cats = new ArrayList<>();
         try {
