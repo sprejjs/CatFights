@@ -37,10 +37,57 @@ public class Game {
             generateQuarterFinals();
         }
 
-        return finalRound;
+        if (semifinals.size() == 0) {
+            for (Round round : quarterRounds) {
+                if (round.getWinner() == null) {
+                    return round;
+                }
+            }
+
+            generateSemiFinals();
+        }
+
+        if (finalRound == null) {
+            for (Round round : semifinals) {
+                if (round.getWinner() == null) {
+                    return round;
+                }
+            }
+
+            generateFinal();
+        }
+
+        if (finalRound.getWinner() == null) {
+            return finalRound;
+        }
+
+        return null;
+    }
+
+    public Cat getWinner() {
+        return finalRound.getWinner();
     }
 
     private void generateQuarterFinals() {
+        for(int i = 0; i < eightFinals.size(); i += 2) {
+            Cat catA = eightFinals.get(i).getWinner();
+            Cat catB = eightFinals.get(i + 1).getWinner();
+            quarterRounds.add(new Round(catA, catB));
+        }
+    }
 
+    private void generateSemiFinals() {
+        for(int i = 0; i < quarterRounds.size(); i += 2) {
+            Cat catA = quarterRounds.get(i).getWinner();
+            Cat catB = quarterRounds.get(i + 1).getWinner();
+            semifinals.add(new Round(catA, catB));
+        }
+    }
+
+    private void generateFinal() {
+        Cat catA = semifinals.get(0).getWinner();
+        Cat catB = semifinals.get(1).getWinner();
+
+        finalRound = new Round(catA, catB);
     }
 }

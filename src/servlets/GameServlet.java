@@ -1,5 +1,6 @@
 package servlets;
 
+import model.Cat;
 import model.DBHelper;
 import model.Game;
 import model.Round;
@@ -18,7 +19,8 @@ import java.io.IOException;
 public class GameServlet extends HttpServlet {
     public static final String ATTRIBUTE_GAME = "game";
     public static final String ATTRIBUTE_ROUND = "round";
-    public static final String ATTRIBUTE_WINNING_CAT = "winner";
+    public static final String ATTRIBUTE_ROUND_WINNER = "round_winner";
+    public static final String ATTRIBUTE_GAME_WINNER = "game_winner";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -33,7 +35,7 @@ public class GameServlet extends HttpServlet {
         }
 
         //Save the results of the previous round (if any)
-        String winningCat = req.getParameter(ATTRIBUTE_WINNING_CAT);
+        String winningCat = req.getParameter(ATTRIBUTE_ROUND_WINNER);
         if (winningCat != null) {
             Round round = game.getNextRound();
             if(winningCat.equals("a")) {
@@ -46,8 +48,21 @@ public class GameServlet extends HttpServlet {
         session.setAttribute(ATTRIBUTE_GAME, game);
 
         Round round = game.getNextRound();
-        req.setAttribute(ATTRIBUTE_ROUND, round);
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/round.jsp");
-        dispatcher.forward(req, resp);
+
+        if(round != null) {
+            //The game isn't over yet
+            req.setAttribute(ATTRIBUTE_ROUND, round);
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/round.jsp");
+            dispatcher.forward(req, resp);
+        } else {
+            //The game is over
+            Cat winner = game.getWinner();
+            req.setAttribute(ATTRIBUTE_GAME_WINNER, winner);
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/winner.jsp");
+            dispatcher.forward(req, resp);
+
+            //Reset the game
+            session.setAttribute(ATTRIBUTE_GAME, null);
+        }
     }
 }

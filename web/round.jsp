@@ -24,11 +24,11 @@
 
     <br/>
     <h2>Select your favourite cat</h2>
-    <div class="competitor" onclick="window.open('/servlets/game?winner=a')">
+    <div class="competitor" onclick="window.open('/servlets/game?round_winner=a')">
         <h4><%= catA.getName() %></h4>
         <img src="<%= catA.getPhotoPath() %>">
     </div>
-    <div class="competitor" onclick="window.open('/servlets/game?winner=b')">
+    <div class="competitor" onclick="window.open('/servlets/game?round_winner=b')">
         <h4><%= catB.getName() %></h4>
         <img src="<%= catB.getPhotoPath() %>">
     </div>
