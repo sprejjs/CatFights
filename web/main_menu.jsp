@@ -26,7 +26,7 @@
     <h1><%= currentPlayer.getUsername() %>, select your action!</h1>
 
     <div id="screen-select-action">
-        <div id="btn_open_room" class="btn-select-action" onclick="window.open('/servlets/game')">
+        <div id="btn_open_room" class="btn-select-action" onclick="window.location.href = '/servlets/game'">
             Start a new game
         </div>
 

@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6d3f2033-b47f-4f86-a73f-a81df8a2af5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cat.java" afterPath="$PROJECT_DIR$/src/model/Cat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/DBHelper.java" afterPath="$PROJECT_DIR$/src/model/DBHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/GameResult.java" afterPath="$PROJECT_DIR$/src/model/GameResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Player.java" afterPath="$PROJECT_DIR$/src/model/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/GameServlet.java" afterPath="$PROJECT_DIR$/src/servlets/GameServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlets/LoginServlet.java" afterPath="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/main_menu.jsp" afterPath="$PROJECT_DIR$/web/main_menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/round.jsp" afterPath="$PROJECT_DIR$/web/round.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/winner.jsp" afterPath="$PROJECT_DIR$/web/winner.jsp" />
     </list>
     <ignored path="CatFights2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +33,8 @@
           <file leaf-file-name="main_menu.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/main_menu.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="90" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="90" />
+                <state relative-caret-position="314">
+                  <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="90" />
                   <folding />
                 </state>
               </provider>
@@ -77,11 +74,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="winner.jsp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="winner.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/winner.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
                   <folding />
                 </state>
               </provider>
@@ -102,11 +99,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Cat.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Cat.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/model/Cat.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -176,8 +173,8 @@
           <file leaf-file-name="round.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/round.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -281,17 +278,17 @@
         <option value="$PROJECT_DIR$/src/servlets/IndexServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/model/Round.java" />
-        <option value="$PROJECT_DIR$/web/main_menu.jsp" />
         <option value="$PROJECT_DIR$/src/model/Game.java" />
-        <option value="$PROJECT_DIR$/web/round.jsp" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/web/winner.jsp" />
         <option value="$PROJECT_DIR$/src/servlets/GameServlet.java" />
         <option value="$PROJECT_DIR$/src/model/GameResult.java" />
         <option value="$PROJECT_DIR$/src/model/Player.java" />
         <option value="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/model/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/model/Cat.java" />
+        <option value="$PROJECT_DIR$/web/main_menu.jsp" />
+        <option value="$PROJECT_DIR$/web/round.jsp" />
+        <option value="$PROJECT_DIR$/web/winner.jsp" />
       </list>
     </option>
   </component>
@@ -1015,7 +1012,7 @@
       <workItem from="1461466278238" duration="66000" />
       <workItem from="1461466424910" duration="158000" />
       <workItem from="1461466596988" duration="1586000" />
-      <workItem from="1461530348304" duration="24970000" />
+      <workItem from="1461530348304" duration="25099000" />
     </task>
     <task id="LOCAL-00001" summary="Adds servlet">
       <created>1461466483031</created>
@@ -1115,11 +1112,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461566589316</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Saves game results in the database.">
+      <created>1461567906463</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1461567906463</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27185000" />
+    <option name="totallyTimeSpent" value="27314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="973" extended-state="6" />
@@ -1180,7 +1184,8 @@
     <MESSAGE value="Displays a game round" />
     <MESSAGE value="Completes the 8th finals." />
     <MESSAGE value="Displays the game over page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Displays the game over page." />
+    <MESSAGE value="Saves game results in the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saves game results in the database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1446,14 +1451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main_menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="90" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="778">
@@ -1481,14 +1478,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/winner.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1544,16 +1533,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/winner.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/round.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="180">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
         </state>
       </provider>

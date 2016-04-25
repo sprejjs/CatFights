@@ -28,7 +28,7 @@
         <img src="<%= winner.getPhotoPath() %>">
     </div>
 
-    <div class="small_button" onclick="window.open('/main_menu.jsp')">
+    <div class="small_button" onclick="window.location.href = '/main_menu.jsp'">
         Back to menu
     </div>
 </body>
